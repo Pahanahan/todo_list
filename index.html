@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/script.js"></script>
+  </head>
+  <body>
+    <div class="header">
+      <div class="container">
+        <div class="header__inner">
+          <h1 class="header__title">Список дел</h1>
+        </div>
+      </div>
+    </div>
+
+    <main class="main">
+      <div class="container">
+        <div class="main__inner">
+          <div class="main__top">
+            <div class="main__top-date">18.02.2025</div>
+            <div class="main__top-not">Дел нет</div>
+          </div>
+          <div class="main__items hidden">
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="popup">
+      <div class="container">
+        <div class="popup__inner">
+          <div class="popup__add">
+            <h3 class="popup__add-title">Добавить дело</h3>
+            <img class="popup__add-close" src="images/close.svg" alt="close">
+            <form class="popup__add-form" action="#">
+              <input type="date" class="popup__add-input-date" required/>
+              <textarea class="popup__add-textarea" required placeholder="Напишите задание и укажите дату выполнения"></textarea>
+              <button class="popup__add-btn" type="submit">Добавить</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup-change">
+      <div class="container">
+        <div class="popup-change__inner">
+          <div class="popup-change__add">
+            <h3 class="popup-change__add-title">Изменить</h3>
+            <img class="popup-change__add-close" src="images/close.svg" alt="close">
+            <form class="popup-change__add-form" action="#">
+              <input type="date" class="popup-change__add-input-date" required/>
+              <textarea class="popup-change__add-textarea" required placeholder="Напишите задание и укажите дату выполнения"></textarea>
+              <button class="popup-change__add-btn" type="submit">Изменить</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <button class="footer__add">Добавить</button>
+          <button class="footer__clear">Очистить</button>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
